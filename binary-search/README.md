@@ -8,7 +8,7 @@ In a more effective way, **Binary Search** way, suppose phone no. for *John Wick
 
 ## Running Time
 
-For any list of *n*, binary search will take `log2 n` steps to run in worst case (Remember logarithms which are flip of exponentials, `10^2 = 100` while `log10 100 = 2`).
+For any list of *n*, binary search will take `log2 n` steps to run in worst case (Remember logarithms which are flip of exponentials, `10^2 = 100` while `log10 100 = 2`). Thus, `O(log2 n)` in Big-O notation.
 
 ### Note
 * Binary search only works when your list is in sorted order, ascending or descending. For example, in a phone book, all the contacts are always sorted alphabetically.
