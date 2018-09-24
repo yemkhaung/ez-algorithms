@@ -19,18 +19,19 @@ const binarySearch = (list, item) => {
 }
 
 const binarySearchRecursive = (list, item) => {
-    let low = 0;
-    let high = list.length - 1;
+    if (list.length === 1) {
+        if (list[0] === item) return true;
+        return false;
+    } 
     
-    if (low > high) return false;
-    
-    let mid = ~~((low + high) / 2);
-    let guess = list[mid];
+    const last = list.length - 1; 
+    const mid = ~~((0 + last) / 2);
+    const guess = list[mid];
     if (guess === item) {
         return true;
     }
     if (guess > item) {
-        return binarySearchRecursive(list.slice(low, mid), item);
+        return binarySearchRecursive(list.slice(0, mid), item);
     } else {
         return binarySearchRecursive(list.slice(mid + 1), item);
     }
