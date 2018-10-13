@@ -12,7 +12,7 @@ graph["johnny"] = []
 graph["thom"] = []
 
 def bfs(name):
-    # for checking already searched names (avoid looping search)
+    # for checking already searched names (avoid infinite loop search)
     searched = []
     search_queue = deque()
     # initially put one-level connections from root
