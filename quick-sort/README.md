@@ -1,6 +1,6 @@
 # Quick Sort
 
-Quick sort is quite used a lot in real-world libaries e.g `C` library `qsort` uses **Quick Sort** internally. Quick sort used **Divide & Conquer** algorithm to recursively apply sorting logic.
+Quick sort is quite used a lot in real-world libaries e.g `C` library `qsort` uses **Quick Sort** internally. Quick sort used **Divide & Conquer** method to recursively apply sorting logic.
 
 In Quick Sort, the main logic is *partitioning*, where
 
